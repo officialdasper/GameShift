@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>Güç</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>Rahatsız etme</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>Programlar</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>Bellek</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>Mod</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>İş</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>Oyun</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>Zaten açık</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>Anlık görüntü kaydedilemedi, hiçbir şey değiştirilmedi: {0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>Geçerli plan okunamadı, olduğu gibi bırakıldı</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>Maksimum performans</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>Geçerli durum okunamadı, olduğu gibi bırakıldı</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>Bildirimler gizlendi</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>Kurulmadı, ayarlardan yeniden açın</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>Bellek önbelleği temizlendi</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>Anlık görüntü okunamadı: {0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>Bildirimler açıldı</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>Önceki haliyle bırakıldı</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>Değiştirilmedi</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>Güç planı geri yüklendi</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>Anlık görüntü silinemedi: {0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>Kapatılamadı: {0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>Kapatılacak bir şey yok</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>Kapatıldı: {0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>; dokunulmadı (oyun veya Windows klasörü): {0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>; dokunulmadı (yol doğrulanamadı): {0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>Başlatılacak bir şey yok</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>Başlatılamadı: {0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>Hepsi zaten çalışıyor</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>Başlatıldı: {0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>Bu oyun zaten listede.</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>Bu program kapatılamaz: korumalı listede.</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>Program zaten listede.</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>Güç yönetimi: maksimum performans</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>Düşük gecikme modu: açık</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>Doku filtreleme: yüksek performans</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>Dikey senkronizasyon: kapalı</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>Gölgelendirici önbelleği: sınırsız</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>Uygulandı</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>Sürücü desteklemiyor: {0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>Geri alınacak bir şey yok</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>Profil bulunamadı</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>Profil silindi</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>Eski haline döndürüldü</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>Geri yüklenemeyen ayar: {0}</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>Güç planı okunamadı</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>Bu güç planı sistemde yok</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg başlatılamadı</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}: kod {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>Bellek temizleme görevi çalıştırılamadı</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>Mod</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>Programlar</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>Oyunlar</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Ayarlar</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>Şu an açık</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>Açık</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>Geçiliyor…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>Son geçiş</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>Henüz geçiş yapılmadı.</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>Normal Windows ayarları</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>Oyunlar için tam güç</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>Normal mod</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>Elle açıldı</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>Oyun çalışıyor: {0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>tamam</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>hata</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>atlandı</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Kaldır</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>İptal</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Ekle</value></data>
+  <data name="Common_System" xml:space="preserve"><value>Windows ile aynı</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>Oyunlar</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>Listedeki bir oyun başladığında GameShift oyun modunu açar. Oyun klasöründeki exe dosyasını seçerseniz kutucukta Steam kapağı veya simgesi görünür.</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>exe seç…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>Çalışanlardan</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>Liste boş. Bir oyunun exe dosyasını ekleyin, mod kendiliğinden açılsın.</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>Oyunun exe dosyasını seçin</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>Programlar (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>Oyun ekle</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>klasör belirtilmedi</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>Programlar</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>Oyun modunda bunlara ne yapılacağı. Diğer programlara dokunulmaz. Oyunlar, hile korumaları, Steam ve sistem işlemleri kapatılamaz.</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>Çalışanlardan ekle</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>Liste boş. Oyun oynarken engel olan programları ekleyin.</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>Kapat ve geri aç</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>Tamamen kapat</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>Dokunma</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>Program ekle</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>Programları işaretleyin ve “Ekle”ye tıklayın.</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Ayarlar</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>Oyun modu</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>“Maksimum performans” güç planını etkinleştir</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>Windows bildirimlerini gizle</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows, programların bildirimleri yönetmesine izin vermiyor.</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>Oyundan önce bellek önbelleğini temizle</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>Bir kez yönetici izni ister.</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>Bir oyun başlayınca modu otomatik değiştir</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>Genel</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>Windows ile başlat</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift tepsiye küçültülmüş olarak açılır.</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>Görünüm</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Arka plan</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Koyu</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Açık</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>Pencere saydamlığı</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>Windows 11 22H2 veya daha yeni bir sürüm gerekir.</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>Pencere arka planı duvar kâğıdının rengiyle hafifçe tonlanır</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>Pencerenin arkasındaki görüntü bulanık olarak görünür</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>Kapalı</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>Düz arka plan</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>Vurgu</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>Yeşil</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>Kırmızı</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>Turuncu</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>Mavi</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>Mor</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Dil</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>Ayarlar yalnızca “Oyunlar” sekmesindeki oyunlar için sürücü profillerine yazılır, diğer programları etkilemez. Oyunlar kapalıyken uygulayın.</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>NVIDIA ekran kartı veya sürücüsü bulunamadı.</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>Oyunlara uygula</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>Eski haline döndür</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Aç</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Çıkış</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>Geçiş hâlâ sürüyor, lütfen bekleyin.</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>Mod: {0}</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>{0} başlatıldı, oyun ayarları açılıyor.</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>Bazı adımlar başarısız oldu. Ayrıntılar pencerede.</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>Oyun kapandı, ayarlar geri yüklendi.</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>Geçiş başarısız: {0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>Oyun modu geçen seferden açık kalmış. Normal ayarlar geri yüklensin mi?</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>Çıkmadan önce “{0}” moduna dönülsün mü?</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>Yönetici izni olmadan bellek temizleme çalışmaz.</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>Hata: {0}
+Ayrıntılar: {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>Oyunları bul</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>Bulunan oyunlar</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>Oyunlar aranıyor…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>Oyun bulunamadı</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>Eklemek istediğiniz oyunları işaretleyin. exe yanlışsa “exe seç…” ile değiştirin.</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>Seçilenleri ekle</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>Zaten listede</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>exe bulunamadı</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>; açık bırakılanlar: {0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>Seçiminizi bekliyor</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>Hiçbiri yeniden açılmadı</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>Oynamadan önce ne kapatılsın</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>{0} çalışıyor. İşaretli programlar kapanacak, ardından oyun modu açılacak.</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>İşaretli programlar kapanacak, ardından oyun modu açılacak.</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>Tümünü işaretle</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>{1} programdan {0} tanesi işaretli</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>Seçimimi hatırla</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>İşaretliler her oyundan önce kapanır, işaretsizler açık kalır</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>Kapat ve geç</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>Kapatmadan geç</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>Dokunulmayanlar: {0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>Programlar kapatılıyor…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>Bazı programlar hâlâ açık</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>Kaydedilmemiş değişiklikler olabilir. Bunları programda kaydedin ya da ne yapılacağını seçin.</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>Biraz daha bekle</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>Kaydetmeden kapat</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>Tümünü kaydetmeden kapat</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>Açık bırak</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>Tümünü açık bırak</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>Kapanıyor…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>Kapandı</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>Hâlâ açık</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>Kaydetmeden kapatılıyor…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>Açık bırakıldı</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>Kapatılamadı</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>Ne yeniden açılsın</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>{0} modu zaten geri açıldı. Bu programları GameShift oyundan önce kapattı.</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>İşaretliler her oyundan sonra yeniden açılır, işaretsizler açılmaz</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>Seçilenleri aç</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>Hiçbir şey açma</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>Bu programlar zaten kapalı.</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>Bu programlar zaten yeniden çalışıyor.</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>{0} çalışıyor. Oynamadan önce neyin kapanacağını seçin.</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>Özel renk</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>Özel vurgu rengi</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Uygula</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>Doygunluk ve parlaklık</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>Ton</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>Bu mod ne yapar</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>Güç planını en yüksek performansa alır</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>Seçtiğiniz arka plan programlarını önce sorarak kapatır</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>Windows bildirimlerini gizler</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>Bekleme belleği önbelleğini temizler</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>Oyunlarınız için NVIDIA profil ayarlarını kullanır</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>Önceki güç planını geri yükler</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>Bildirimleri yeniden gösterir</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>Kapatılan programlardan seçtiklerinizi yeniden açar</value></data>
+</root>

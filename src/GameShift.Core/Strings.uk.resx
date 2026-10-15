@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>Живлення</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>Не турбувати</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>Програми</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>Пам’ять</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>Режим</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>Робота</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>Ігровий</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>Уже ввімкнено</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>Не вдалося записати знімок, нічого не змінювали: {0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>Вимкнено</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>Не вдалося прочитати поточну схему, залишено як є</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>Максимальна продуктивність</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>Не вдалося прочитати поточний стан, залишено як є</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>Сповіщення приховано</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>Не налаштовано, увімкніть знову в налаштуваннях</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>Кеш пам’яті очищено</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>Не вдалося прочитати знімок: {0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>Сповіщення ввімкнено</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>Залишено як було</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>Не змінювалось</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>Схему живлення повернуто</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>Не вдалося видалити знімок: {0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>Не вдалося закрити: {0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>Нічого закривати</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>Закрито: {0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>; не чіпали (папка гри або Windows): {0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>; не чіпали (не вдалося перевірити шлях): {0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>Нічого запускати</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>Не запустилися: {0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>Усе вже запущено</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>Запущено: {0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>Ця гра вже в списку.</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>Цю програму закривати не можна: вона в захищеному списку.</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>Програма вже в списку.</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>Керування живленням: максимальна продуктивність</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>Режим низької затримки: увімк.</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>Фільтрація текстур: висока продуктивність</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>Вертикальна синхронізація: вимк.</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>Кеш шейдерів: необмежено</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>Застосовано</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>Драйвер не підтримує: {0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>Нічого повертати</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>Профіль не знайдено</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>Профіль видалено</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>Повернуто як було</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>Не повернулись налаштування: {0} шт.</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>Не вдалося прочитати схему живлення</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>Такої схеми живлення немає в системі</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg не запустився</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}: код {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>Не вдалося запустити завдання очищення пам’яті</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>Режим</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>Програми</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>Ігри</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Налаштування</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>Зараз увімкнено</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>Увімкнено</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>Перемикаю…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>Останнє перемикання</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>Перемикань поки не було.</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>Звичайні налаштування Windows</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>Максимум для ігор</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>Звичайний режим</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>Увімкнено вручну</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>Запущено гру: {0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>готово</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>помилка</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>пропущено</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Прибрати</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Скасувати</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Додати</value></data>
+  <data name="Common_System" xml:space="preserve"><value>Як у Windows</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>Ігри</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>Коли запускається гра зі списку, GameShift вмикає ігровий режим. Обирайте exe у папці гри, тоді на плитці буде її обкладинка зі Steam або іконка.</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>Обрати exe…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>Із запущених</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>Список порожній. Додайте exe гри, і режим вмикатиметься сам.</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>Оберіть exe гри</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>Програми (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>Додати гру</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>папку не вказано</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>Програми</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>Що з ними робити в ігровому режимі. Решта програм не чіпається. Ігри, античити, Steam і системні процеси закривати не можна.</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>Додати із запущених</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>Список порожній. Додайте програми, які заважають грати.</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>Закрити й повернути</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>Закрити назовсім</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>Не чіпати</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>Додати програми</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>Позначте програми та натисніть «Додати».</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Налаштування</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>Ігрові режими</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>Вмикати схему живлення «Максимальна продуктивність»</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>Приховувати сповіщення Windows</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows не дозволяє керувати сповіщеннями з програми.</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>Очищати кеш пам’яті перед грою</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>Один раз попросить права адміністратора.</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>Перемикати режим самостійно, коли запускається гра</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>Загальні</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>Запускати разом із Windows</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift запуститься згорнутим у трей.</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>Оформлення</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Тло</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Темна</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Світла</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>Прозорість вікна</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>Потрібна Windows 11 версії 22H2 або новіша.</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>Тло вікна злегка забарвлене кольором шпалер</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>Крізь вікно розмито видно те, що під ним</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>Вимк.</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>Суцільне тло</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>Акцент</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>Зелений</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>Червоний</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>Помаранчевий</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>Синій</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>Фіолетовий</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Мова</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>Налаштування записуються в профілі драйвера лише для ігор із вкладки «Ігри», на решту програм вони не впливають. Застосовуйте, коли ігри закриті.</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>Відеокарту NVIDIA або її драйвер не знайдено.</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>Застосувати до ігор</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>Повернути як було</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Відкрити</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Вихід</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>Перемикання ще триває, зачекайте.</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>Режим «{0}»</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>Запущено {0}, вмикаю ігрові налаштування.</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>Частина кроків не пройшла. Подробиці у вікні.</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>Гру закрито, налаштування повернуто.</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>Перемикання не вдалося: {0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>Ігровий режим залишився ввімкненим з минулого разу. Повернути звичайні налаштування?</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>Перед виходом повернути режим «{0}»?</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>Без прав адміністратора очищення пам’яті не працюватиме.</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>Помилка: {0}
+Подробиці в {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>Знайти ігри</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>Знайдені ігри</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>Шукаю ігри…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>Ігор не знайдено</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>Позначте ігри, які потрібно додати. Якщо exe обрано не той, змініть його через «Обрати exe…».</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>Додати вибрані</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>Уже в списку</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>exe не знайдено</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>; залишено відкритими: {0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>Чекає на ваш вибір</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>Нічого не відкривав</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>Що закрити перед грою</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>Запущено {0}. Позначені програми закриються, потім увімкнеться ігровий режим.</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>Позначені програми закриються, потім увімкнеться ігровий режим.</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>Позначити всі</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>Позначено {0} з {1}</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>Запам'ятати вибір</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>Позначені закриватимуться перед кожною грою, зняті залишаться відкритими</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>Закрити й увімкнути режим</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>Увімкнути без закриття</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>Не чіпаємо: {0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>Закриваю програми…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>Не всі програми закрилися</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>Можливо, там є незбережені зміни. Збережіть їх у програмі або виберіть, що зробити.</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>Почекати ще</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>Закрити без збереження</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>Закрити всі без збереження</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>Залишити відкритою</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>Залишити всі відкритими</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>Закривається…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>Закрито</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>Ще відкрита</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>Закриваю без збереження…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>Залишено відкритою</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>Не вдалося закрити</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>Що відкрити знову</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>Режим «{0}» уже ввімкнено. Ці програми GameShift закрив перед грою.</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>Позначені відкриватимуться після кожної гри, зняті ні</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>Відкрити вибрані</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>Нічого не відкривати</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>Ці програми вже закриті.</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>Ці програми вже запущені знову.</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>Запущено {0}. Виберіть, що закрити перед грою.</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>Свій колір</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>Свій колір акценту</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Застосувати</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>Насиченість і яскравість</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>Відтінок</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>Що робить режим</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>Ставить живлення на максимальну продуктивність</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>Закриває вибрані фонові програми, спершу запитавши</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>Приховує сповіщення Windows</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>Очищає standby-кеш пам'яті</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>Використовує налаштування NVIDIA у профілях ваших ігор</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>Повертає попередню схему живлення</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>Знову показує сповіщення</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>Знову відкриває закриті програми, які оберете</value></data>
+</root>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>电源</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>勿扰</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>程序</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>内存</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>模式</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>工作</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>游戏</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>已开启</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>无法保存快照，未做任何更改：{0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>已关闭</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>无法读取当前电源计划，保持原样</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>最高性能</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>无法读取当前状态，保持原样</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>通知已隐藏</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>尚未配置，请在设置中重新开启</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>内存缓存已清理</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>无法读取快照：{0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>通知已开启</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>保持原状</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>未更改</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>电源计划已恢复</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>无法删除快照：{0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>无法关闭：{0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>没有需要关闭的程序</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>已关闭：{0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>；未处理（游戏或 Windows 目录）：{0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>；未处理（无法验证路径）：{0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>没有需要启动的程序</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>启动失败：{0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>全部已在运行</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>已启动：{0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>该游戏已在列表中。</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>无法关闭此程序：它在受保护列表中。</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>该程序已在列表中。</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>电源管理：最高性能优先</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>低延迟模式：开</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>纹理过滤：高性能</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>垂直同步：关</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>着色器缓存：无限制</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>已应用</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>驱动不支持：{0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>没有可恢复的内容</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>未找到配置文件</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>配置文件已删除</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>已恢复原状</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>未恢复的设置：{0} 项</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>无法读取电源计划</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>系统中没有该电源计划</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg 未能启动</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}：代码 {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>无法运行内存清理任务</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>模式</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>程序</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>游戏</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>设置</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>当前模式</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>已开启</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>正在切换…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>最近一次切换</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>还没有切换记录。</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>常规 Windows 设置</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>游戏性能全开</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>常规模式</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>已手动开启</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>正在运行的游戏：{0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>完成</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>错误</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>已跳过</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>移除</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>取消</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>添加</value></data>
+  <data name="Common_System" xml:space="preserve"><value>跟随 Windows</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>游戏</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>列表中的游戏启动时，GameShift 会开启游戏模式。请选择游戏文件夹中的 exe，卡片上会显示它的 Steam 封面或图标。</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>选择 exe…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>从运行中选择</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>列表为空。添加游戏的 exe 后，模式会自动开启。</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>选择游戏的 exe</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>程序 (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>添加游戏</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>未指定文件夹</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>程序</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>这些程序在游戏模式下如何处理。其他程序不受影响。游戏、反作弊、Steam 和系统进程无法关闭。</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>从运行中添加</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>列表为空。请添加会妨碍游戏的程序。</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>关闭并恢复</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>仅关闭</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>保持运行</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>添加程序</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>勾选程序后点击“添加”。</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>设置</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>游戏模式</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>启用“最高性能”电源计划</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>隐藏 Windows 通知</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows 不允许程序控制通知。</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>游戏前清理内存缓存</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>会请求一次管理员权限。</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>游戏启动时自动切换模式</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>常规</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>随 Windows 启动</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift 将最小化到托盘启动。</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>外观</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>背景</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>深色</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>浅色</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>窗口透明效果</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>需要 Windows 11 22H2 或更新版本。</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>窗口背景带有一点壁纸的颜色</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>可模糊地透出窗口下方的内容</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>关闭</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>纯色背景</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>强调色</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>绿色</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>红色</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>橙色</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>蓝色</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>紫色</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>语言</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>设置只会写入“游戏”页中游戏的驱动配置文件，不影响其他程序。请在游戏关闭时应用。</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>未找到 NVIDIA 显卡或其驱动。</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>应用到游戏</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>恢复原状</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>打开</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>退出</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>正在切换，请稍候。</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>模式：{0}</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>已启动 {0}，正在开启游戏设置。</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>部分步骤未成功，详情见窗口。</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>游戏已关闭，设置已恢复。</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>切换失败：{0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>游戏模式从上次起一直开着。要恢复常规设置吗？</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>退出前要切回“{0}”模式吗？</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>没有管理员权限，内存清理将无法工作。</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>错误：{0}
+详情见 {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>查找游戏</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>找到的游戏</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>正在查找游戏…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>未找到游戏</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>勾选要添加的游戏。如果 exe 不对，可通过“选择 exe…”更换。</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>添加所选</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>已在列表中</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>未找到 exe</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>；保持打开：{0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>等待你的选择</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>没有重新打开任何程序</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>游戏前要关闭什么</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>{0} 正在运行。勾选的程序会被关闭，然后开启游戏模式。</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>勾选的程序会被关闭，然后开启游戏模式。</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>全选</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>已勾选 {0}/{1}</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>记住我的选择</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>勾选的程序每次游戏前都会关闭，未勾选的保持打开</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>关闭并切换</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>不关闭直接切换</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>不受影响：{0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>正在关闭程序…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>有些程序还开着</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>其中可能有未保存的更改。请在程序里保存，或选择如何处理。</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>再等等</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>不保存直接关闭</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>全部不保存直接关闭</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>保持打开</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>全部保持打开</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>正在关闭…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>已关闭</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>仍然开着</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>正在不保存关闭…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>已保持打开</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>无法关闭</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>要重新打开什么</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>已经切回“{0}”模式。这些程序是 GameShift 在游戏前关闭的。</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>勾选的程序每次游戏后都会重新打开，未勾选的不会</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>打开所选</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>什么都不打开</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>这些程序已经关闭。</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>这些程序已经重新运行。</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>{0} 正在运行。请选择游戏前要关闭的程序。</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>自定义颜色</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>自定义强调色</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>应用</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>饱和度和亮度</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>色相</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>此模式的作用</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>将电源计划切换为最高性能</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>关闭你选择的后台程序，关闭前会先询问</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>隐藏 Windows 通知</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>清理待机内存缓存</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>为你的游戏使用 NVIDIA 配置文件设置</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>恢复之前的电源计划</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>重新显示通知</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>重新打开你选择的已关闭程序</value></data>
+</root>

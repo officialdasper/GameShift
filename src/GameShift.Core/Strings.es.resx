@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>Energía</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>No molestar</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>Programas</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>Memoria</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>Modo</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>Trabajo</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>Juegos</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>Ya activado</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>No se pudo guardar la instantánea, no se cambió nada: {0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>Desactivado</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>No se pudo leer el plan actual, se dejó como estaba</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>Máximo rendimiento</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>No se pudo leer el estado actual, se dejó como estaba</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>Notificaciones ocultas</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>No configurado, vuelve a activarlo en ajustes</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>Caché de memoria limpiada</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>No se pudo leer la instantánea: {0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>Notificaciones activadas</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>Se dejó como estaba</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>Sin cambios</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>Plan de energía restaurado</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>No se pudo eliminar la instantánea: {0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>No se pudo cerrar: {0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>Nada que cerrar</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>Cerrado: {0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>; sin tocar (carpeta del juego o de Windows): {0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>; sin tocar (no se pudo comprobar la ruta): {0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>Nada que iniciar</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>No se pudieron iniciar: {0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>Todo ya está en ejecución</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>Iniciado: {0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>Este juego ya está en la lista.</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>Este programa no se puede cerrar: está en la lista protegida.</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>El programa ya está en la lista.</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>Administración de energía: máximo rendimiento</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>Modo de baja latencia: activado</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>Filtrado de texturas: alto rendimiento</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>Sincronización vertical: desactivada</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>Caché de sombreadores: ilimitada</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>Aplicado</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>El controlador no lo admite: {0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>Nada que restaurar</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>Perfil no encontrado</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>Perfil eliminado</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>Restaurado al estado original</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>Ajustes sin restaurar: {0}</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>No se pudo leer el plan de energía</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>Este plan de energía no existe en el sistema</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg no se inició</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}: código {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>No se pudo ejecutar la tarea de limpieza de memoria</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>Modo</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>Programas</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>Juegos</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Ajustes</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>Activo ahora</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>Activo</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>Cambiando…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>Último cambio</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>Aún no hay cambios.</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>Ajustes normales de Windows</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>Máximo para juegos</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>Modo normal</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>Activado manualmente</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>Juego en ejecución: {0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>listo</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>error</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>omitido</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Quitar</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancelar</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Añadir</value></data>
+  <data name="Common_System" xml:space="preserve"><value>Como en Windows</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>Juegos</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>Cuando se inicia un juego de la lista, GameShift activa el modo de juegos. Elige el exe de la carpeta del juego y la ficha mostrará su portada de Steam o su icono.</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>Elegir exe…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>De los abiertos</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>La lista está vacía. Añade el exe de un juego y el modo se activará solo.</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>Elige el exe del juego</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>Programas (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>Añadir juego</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>carpeta no indicada</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>Programas</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>Qué hacer con ellos en el modo de juegos. El resto de programas no se toca. Los juegos, los anticheats, Steam y los procesos del sistema no se pueden cerrar.</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>Añadir de los abiertos</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>La lista está vacía. Añade los programas que molestan al jugar.</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>Cerrar y restaurar</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>Solo cerrar</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>No tocar</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>Añadir programas</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>Marca los programas y pulsa «Añadir».</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Ajustes</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>Modo de juegos</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>Activar el plan de energía «Máximo rendimiento»</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>Ocultar las notificaciones de Windows</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows no permite que los programas controlen las notificaciones.</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>Limpiar la caché de memoria antes de jugar</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>Pedirá permisos de administrador una sola vez.</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>Cambiar el modo automáticamente al iniciar un juego</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>General</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>Iniciar con Windows</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift se iniciará minimizado en la bandeja.</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>Apariencia</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Fondo</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Oscuro</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Claro</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>Transparencia de la ventana</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>Requiere Windows 11 versión 22H2 o posterior.</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>El fondo de la ventana toma un leve tono del fondo de pantalla</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>Lo que hay debajo de la ventana se ve desenfocado</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>Desactivado</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>Fondo sólido</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>Acento</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>Verde</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>Rojo</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>Naranja</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>Azul</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>Morado</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Idioma</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>Los ajustes se escriben en los perfiles del controlador solo para los juegos de la pestaña «Juegos» y no afectan a otros programas. Aplícalos con los juegos cerrados.</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>No se encontró la tarjeta gráfica NVIDIA o su controlador.</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>Aplicar a los juegos</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>Restaurar original</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Abrir</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Salir</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>El cambio aún está en curso, espera.</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>Modo: {0}</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>Se inició {0}, activando los ajustes de juego.</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>Algunos pasos fallaron. Los detalles están en la ventana.</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>Juego cerrado, ajustes restaurados.</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>No se pudo cambiar: {0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>El modo de juegos se quedó activado la última vez. ¿Restaurar los ajustes normales?</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>¿Volver al modo «{0}» antes de salir?</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>Sin permisos de administrador, la limpieza de memoria no funcionará.</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>Error: {0}
+Detalles en {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>Buscar juegos</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>Juegos encontrados</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>Buscando juegos…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>No se encontraron juegos</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>Marca los juegos que quieras añadir. Si el exe no es el correcto, cámbialo con «Elegir exe…».</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>Añadir seleccionados</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>Ya está en la lista</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>exe no encontrado</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>; se dejaron abiertos: {0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>Esperando tu elección</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>No se reabrió nada</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>Qué cerrar antes de jugar</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>{0} está en marcha. Los programas marcados se cerrarán y luego se activará el modo de juegos.</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>Los programas marcados se cerrarán y luego se activará el modo de juegos.</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>Marcar todos</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>{0} de {1} marcados</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>Recordar mi elección</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>Los marcados se cerrarán antes de cada partida y los desmarcados seguirán abiertos</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>Cerrar y cambiar</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>Cambiar sin cerrar</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>No se tocan: {0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>Cerrando programas…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>Algunos programas siguen abiertos</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>Puede que tengan cambios sin guardar. Guárdalos en el programa o elige qué hacer.</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>Esperar más</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>Cerrar sin guardar</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>Cerrar todos sin guardar</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>Dejar abierto</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>Dejar todos abiertos</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>Cerrando…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>Cerrado</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>Sigue abierto</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>Cerrando sin guardar…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>Se dejó abierto</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>No se pudo cerrar</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>Qué volver a abrir</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>El modo {0} ya está activado. GameShift cerró estos programas antes de jugar.</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>Los marcados se abrirán después de cada partida y los desmarcados no</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>Abrir marcados</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>No abrir nada</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>Estos programas ya están cerrados.</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>Estos programas ya se están ejecutando de nuevo.</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>{0} está en marcha. Elige qué cerrar antes de jugar.</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>Color propio</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>Color de acento propio</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Aplicar</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>Saturación y brillo</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>Tono</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>Qué hace este modo</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>Pone el plan de energía en máximo rendimiento</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>Cierra los programas en segundo plano que elijas, preguntando antes</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>Oculta las notificaciones de Windows</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>Libera la memoria en espera</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>Usa los ajustes de perfil de NVIDIA para tus juegos</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>Restaura tu plan de energía anterior</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>Vuelve a mostrar las notificaciones</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>Vuelve a abrir los programas cerrados que elijas</value></data>
+</root>

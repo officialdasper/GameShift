@@ -1,0 +1,385 @@
+<UserControl x:Class="GameShift.App.Views.ModeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:GameShift.App.Localization"
+             xmlns:theme="clr-namespace:GameShift.App.Theme"
+             x:Name="Root" Padding="36,26,36,24">
+  <UserControl.Resources>
+    <!-- Круглая кнопка «i» в углу карточки. На обложке получает тёмную подложку и белый глиф (через триггер карточки). -->
+    <Style x:Key="InfoButton" TargetType="Button">
+      <Setter Property="Width" Value="28"/>
+      <Setter Property="Height" Value="28"/>
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Foreground" Value="{DynamicResource SubtleBrush}"/>
+      <Setter Property="Cursor" Value="Hand"/>
+      <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+            <Grid Background="Transparent">
+              <Ellipse Fill="{TemplateBinding Background}"/>
+              <Ellipse x:Name="Overlay" Fill="{TemplateBinding Foreground}" Opacity="0"/>
+              <!-- «i» в круге рисуется вектором: глиф шрифта на 14 px теряет точку. -->
+              <Grid Width="18" Height="18" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Ellipse Stroke="{TemplateBinding Foreground}" StrokeThickness="1.3"/>
+                <Path Fill="{TemplateBinding Foreground}"
+                      Data="M9,4.4 A1.15,1.15 0 1 1 8.99,4.4 Z M8.3,7.6 L9.7,7.6 L9.7,13.4 L8.3,13.4 Z"/>
+              </Grid>
+              <Ellipse x:Name="Ring" Margin="-3" Stroke="{DynamicResource AccentBrush}" StrokeThickness="2"
+                       Visibility="Collapsed"/>
+            </Grid>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.EnterActions>
+                  <BeginStoryboard>
+                    <Storyboard>
+                      <DoubleAnimation Storyboard.TargetName="Overlay" Storyboard.TargetProperty="Opacity" To="0.16"
+                                       Duration="{theme:Ms 120}" EasingFunction="{StaticResource EaseOut}"/>
+                    </Storyboard>
+                  </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                  <BeginStoryboard>
+                    <Storyboard>
+                      <DoubleAnimation Storyboard.TargetName="Overlay" Storyboard.TargetProperty="Opacity" To="0"
+                                       Duration="{theme:Ms 160}" EasingFunction="{StaticResource EaseOut}"/>
+                    </Storyboard>
+                  </BeginStoryboard>
+                </Trigger.ExitActions>
+              </Trigger>
+              <Trigger Property="theme:FocusCue.Visible" Value="True">
+                <Setter TargetName="Ring" Property="Visibility" Value="Visible"/>
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="ModeCardTemplate" TargetType="Button">
+      <Grid x:Name="Card" RenderTransformOrigin="0.5,0.5">
+        <Grid.RenderTransform>
+          <TransformGroup>
+            <ScaleTransform/>
+            <TranslateTransform/>
+          </TransformGroup>
+        </Grid.RenderTransform>
+
+        <Border x:Name="Base" CornerRadius="8" Background="{DynamicResource SurfaceBrush}"
+                BorderBrush="{DynamicResource LineBrush}" BorderThickness="1" SnapsToDevicePixels="True"/>
+
+        <Grid x:Name="ArtLayers" Visibility="Collapsed">
+          <Border CornerRadius="8" Background="#0B0C0D"/>
+          <Border CornerRadius="8" Opacity="0.72">
+            <Border.Background>
+              <ImageBrush ImageSource="{Binding ArtGray}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality"/>
+            </Border.Background>
+          </Border>
+          <!-- Цветные слои. У «Работы» это слегка размытые обои под лёгким тоном акцента; читаемость текста даёт затемнение снизу. -->
+          <Grid x:Name="ArtHover" Opacity="0">
+            <Border CornerRadius="8">
+              <Border.Background>
+                <ImageBrush ImageSource="{Binding Art}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality"/>
+              </Border.Background>
+            </Border>
+            <Border x:Name="TintHover" CornerRadius="8" Background="{DynamicResource AccentBrush}" Opacity="0.16"
+                    Visibility="Collapsed"/>
+          </Grid>
+          <Grid x:Name="ArtActive" Opacity="0">
+            <Border CornerRadius="8">
+              <Border.Background>
+                <ImageBrush ImageSource="{Binding Art}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality"/>
+              </Border.Background>
+            </Border>
+            <Border x:Name="TintActive" CornerRadius="8" Background="{DynamicResource AccentBrush}" Opacity="0.16"
+                    Visibility="Collapsed"/>
+          </Grid>
+          <Border CornerRadius="8">
+            <Border.Background>
+              <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#00000000" Offset="0.3"/>
+                <GradientStop Color="#8C000000" Offset="0.65"/>
+                <GradientStop Color="#E6000000" Offset="1"/>
+              </LinearGradientBrush>
+            </Border.Background>
+          </Border>
+        </Grid>
+        <Border x:Name="Lift" CornerRadius="8" Background="{DynamicResource TextBrush}" Opacity="0"/>
+
+        <!-- Подпись короткая и не обрезается: в узком окне и на длинных языках переносится на вторую строку,
+             глиф и название поднимаются вместе с ней. -->
+        <Grid x:Name="BodyHost">
+        <StackPanel x:Name="Body" Margin="20,16,20,22" Opacity="0.8" VerticalAlignment="Bottom">
+          <TextBlock x:Name="Glyph" Style="{StaticResource Glyph}" Text="{Binding Glyph}" FontSize="28"
+                     HorizontalAlignment="Left" Margin="0,0,0,5" Foreground="{DynamicResource MutedBrush}"/>
+          <!-- Unbounded широкий: длинное название уменьшается по ширине карточки, а не обрезается. -->
+          <Viewbox StretchDirection="DownOnly" Stretch="Uniform" HorizontalAlignment="Left">
+            <TextBlock x:Name="Title" Text="{Binding Title}" FontFamily="{StaticResource DisplayFont}" FontSize="22"
+                       FontWeight="SemiBold" Foreground="{DynamicResource TextBrush}" TextWrapping="NoWrap"/>
+          </Viewbox>
+          <TextBlock x:Name="Hint" Text="{Binding Hint}" FontSize="13" Margin="0,3,0,0" TextWrapping="Wrap"
+                     Foreground="{DynamicResource SubtleBrush}"/>
+        </StackPanel>
+        </Grid>
+
+        <Grid x:Name="OnLabelHost">
+        <Border x:Name="OnLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,14,0,0"
+                Padding="8,4,10,4" CornerRadius="4" Background="{DynamicResource RaisedBrush}" Opacity="0">
+          <StackPanel Orientation="Horizontal">
+            <TextBlock x:Name="OnMark" Style="{StaticResource Glyph}" Text="&#xE73E;" FontSize="11" Margin="0,1,6,0"
+                       Foreground="{DynamicResource AccentTextBrush}"/>
+            <TextBlock x:Name="OnText" Text="{loc:T Mode_On}" FontSize="12.5" FontWeight="SemiBold" TextWrapping="NoWrap"
+                       Foreground="{DynamicResource TextBrush}"/>
+          </StackPanel>
+        </Border>
+        </Grid>
+
+
+
+
+        <Border x:Name="ActiveRing" CornerRadius="8" BorderThickness="1.5" BorderBrush="{DynamicResource AccentBrush}"
+                Opacity="0" SnapsToDevicePixels="True"/>
+        <Border x:Name="FocusRing" CornerRadius="11" Margin="-4" BorderThickness="2"
+                BorderBrush="{DynamicResource AccentBrush}" Visibility="Collapsed"/>
+
+        <!-- Подсказка о режиме: карточка гасит обложку и надпись, на её собственном фоне проступает список. -->
+        <Grid x:Name="InfoLayer" Opacity="0" IsHitTestVisible="False">
+
+          <Border Padding="20,16,52,18" VerticalAlignment="Bottom">
+            <StackPanel>
+              <TextBlock Text="{Binding Title}" FontSize="13" FontWeight="SemiBold" TextWrapping="NoWrap"
+                         Foreground="{DynamicResource TextBrush}" Margin="0,0,0,6"/>
+              <ItemsControl ItemsSource="{Binding Summary}" Focusable="False">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                    <Grid Margin="0,2">
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                      </Grid.ColumnDefinitions>
+                      <Ellipse Width="4" Height="4" Fill="{DynamicResource MutedBrush}" VerticalAlignment="Top"
+                               Margin="1,7,10,0"/>
+                      <TextBlock Grid.Column="1" Text="{Binding}" FontSize="12.5" Foreground="{DynamicResource SubtleBrush}"/>
+                    </Grid>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </StackPanel>
+          </Border>
+        </Grid>
+
+        <!-- Значок «i»: при наведении или фокусе с клавиатуры показывает, что делает режим. Отдельная кнопка внутри
+             карточки: её щелчок до карточки не доходит и режим не переключает. -->
+        <Button x:Name="Info" Style="{StaticResource InfoButton}" HorizontalAlignment="Right" VerticalAlignment="Top"
+                Margin="0,12,12,0" AutomationProperties.Name="{loc:T Mode_InfoName}"
+                AutomationProperties.HelpText="{Binding SummaryText}"
+                MouseEnter="OnInfoEnter" MouseLeave="OnInfoLeave" GotKeyboardFocus="OnInfoFocus"
+                LostKeyboardFocus="OnInfoBlur" PreviewKeyDown="OnInfoKey" Click="OnInfoClick"/>
+
+        <Grid x:Name="Progress" Height="2" VerticalAlignment="Bottom" Margin="10,0,10,1" Visibility="Collapsed"
+              ClipToBounds="True">
+          <Border Background="{DynamicResource AccentBrush}" Opacity="0.25"/>
+          <Border x:Name="Runner" Background="{DynamicResource AccentBrush}" Visibility="{x:Static theme:Motion.WhenEnabled}">
+            <Border.OpacityMask>
+              <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <LinearGradientBrush.RelativeTransform>
+                  <TranslateTransform X="-0.7"/>
+                </LinearGradientBrush.RelativeTransform>
+                <GradientStop Color="Transparent" Offset="0.35"/>
+                <GradientStop Color="Black" Offset="0.35"/>
+                <GradientStop Color="Black" Offset="0.65"/>
+                <GradientStop Color="Transparent" Offset="0.65"/>
+              </LinearGradientBrush>
+            </Border.OpacityMask>
+          </Border>
+          <Border Background="{DynamicResource AccentBrush}" Visibility="{x:Static theme:Motion.WhenDisabled}"/>
+        </Grid>
+      </Grid>
+
+      <ControlTemplate.Triggers>
+        <DataTrigger Binding="{Binding HasArt}" Value="True">
+          <Setter TargetName="ArtLayers" Property="Visibility" Value="Visible"/>
+          <Setter TargetName="Glyph" Property="Visibility" Value="Collapsed"/>
+          <Setter TargetName="Base" Property="BorderBrush" Value="Transparent"/>
+          <Setter TargetName="Lift" Property="Background" Value="#FFFFFF"/>
+          <Setter TargetName="Title" Property="Foreground" Value="#FFFFFF"/>
+          <Setter TargetName="Hint" Property="Foreground" Value="#D9FFFFFF"/>
+          <Setter TargetName="OnLabel" Property="Background" Value="#B3000000"/>
+          <Setter TargetName="OnText" Property="Foreground" Value="#FFFFFF"/>
+          <Setter TargetName="OnMark" Property="Foreground" Value="{DynamicResource AccentBrush}"/>
+          <Setter TargetName="Info" Property="Background" Value="#59000000"/>
+          <Setter TargetName="Info" Property="Foreground" Value="#E6FFFFFF"/>
+        </DataTrigger>
+        <MultiDataTrigger>
+          <MultiDataTrigger.Conditions>
+            <Condition Binding="{Binding HasArt}" Value="True"/>
+            <Condition Binding="{Binding IsWallpaper}" Value="True"/>
+          </MultiDataTrigger.Conditions>
+          <Setter TargetName="TintHover" Property="Visibility" Value="Visible"/>
+          <Setter TargetName="TintActive" Property="Visibility" Value="Visible"/>
+        </MultiDataTrigger>
+
+        <DataTrigger Binding="{Binding IsActive}" Value="True">
+          <Setter TargetName="Glyph" Property="Foreground" Value="{DynamicResource AccentTextBrush}"/>
+          <DataTrigger.EnterActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="ActiveRing" Storyboard.TargetProperty="Opacity" To="1"
+                                 Duration="{theme:Ms 200}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="OnLabel" Storyboard.TargetProperty="Opacity" To="1"
+                                 Duration="{theme:Ms 200}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="ArtActive" Storyboard.TargetProperty="Opacity" To="1"
+                                 Duration="{theme:Ms 250}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="Body" Storyboard.TargetProperty="Opacity" To="1"
+                                 Duration="{theme:Ms 250}" EasingFunction="{StaticResource EaseOut}"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </DataTrigger.EnterActions>
+          <DataTrigger.ExitActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="ActiveRing" Storyboard.TargetProperty="Opacity" To="0"
+                                 Duration="{theme:Ms 180}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="OnLabel" Storyboard.TargetProperty="Opacity" To="0"
+                                 Duration="{theme:Ms 150}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="ArtActive" Storyboard.TargetProperty="Opacity" To="0"
+                                 Duration="{theme:Ms 250}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="Body" Storyboard.TargetProperty="Opacity" To="0.8"
+                                 Duration="{theme:Ms 250}" EasingFunction="{StaticResource EaseOut}"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </DataTrigger.ExitActions>
+        </DataTrigger>
+
+        <Trigger Property="IsMouseOver" Value="True">
+          <Setter TargetName="Base" Property="BorderBrush" Value="{DynamicResource MutedBrush}"/>
+          <Trigger.EnterActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="Card" To="-2" Duration="{theme:Ms 160}"
+                                 EasingFunction="{StaticResource EaseOut}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(TranslateTransform.Y)"/>
+                <DoubleAnimation Storyboard.TargetName="Lift" Storyboard.TargetProperty="Opacity" To="0.05"
+                                 Duration="{theme:Ms 160}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="ArtHover" Storyboard.TargetProperty="Opacity" To="1"
+                                 Duration="{theme:Ms 220}" EasingFunction="{StaticResource EaseOut}"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </Trigger.EnterActions>
+          <Trigger.ExitActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="Card" To="0" Duration="{theme:Ms 200}"
+                                 EasingFunction="{StaticResource EaseOut}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[1].(TranslateTransform.Y)"/>
+                <DoubleAnimation Storyboard.TargetName="Lift" Storyboard.TargetProperty="Opacity" To="0"
+                                 Duration="{theme:Ms 200}" EasingFunction="{StaticResource EaseOut}"/>
+                <DoubleAnimation Storyboard.TargetName="ArtHover" Storyboard.TargetProperty="Opacity" To="0"
+                                 Duration="{theme:Ms 250}" EasingFunction="{StaticResource EaseOut}"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </Trigger.ExitActions>
+        </Trigger>
+
+        <Trigger Property="IsPressed" Value="True">
+          <Trigger.EnterActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="Card" To="0.98" Duration="{theme:Ms 100}"
+                                 EasingFunction="{StaticResource EaseOut}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"/>
+                <DoubleAnimation Storyboard.TargetName="Card" To="0.98" Duration="{theme:Ms 100}"
+                                 EasingFunction="{StaticResource EaseOut}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </Trigger.EnterActions>
+          <Trigger.ExitActions>
+            <BeginStoryboard>
+              <Storyboard>
+                <DoubleAnimation Storyboard.TargetName="Card" To="1" Duration="{theme:Ms 180}"
+                                 EasingFunction="{StaticResource EaseOutQuint}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"/>
+                <DoubleAnimation Storyboard.TargetName="Card" To="1" Duration="{theme:Ms 180}"
+                                 EasingFunction="{StaticResource EaseOutQuint}"
+                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"/>
+              </Storyboard>
+            </BeginStoryboard>
+          </Trigger.ExitActions>
+        </Trigger>
+
+        <Trigger Property="theme:FocusCue.Visible" Value="True">
+          <Setter TargetName="FocusRing" Property="Visibility" Value="Visible"/>
+        </Trigger>
+
+        <Trigger Property="IsEnabled" Value="False">
+          <Setter TargetName="Card" Property="Opacity" Value="0.7"/>
+        </Trigger>
+
+        <DataTrigger Binding="{Binding IsSwitching}" Value="True">
+          <Setter TargetName="Card" Property="Opacity" Value="1"/>
+          <Setter TargetName="Progress" Property="Visibility" Value="Visible"/>
+          <DataTrigger.EnterActions>
+            <BeginStoryboard x:Name="RunProgress">
+              <Storyboard RepeatBehavior="Forever">
+                <DoubleAnimation Storyboard.TargetName="Runner" From="-0.7" To="0.7" Duration="0:0:1.1"
+                                 Storyboard.TargetProperty="(UIElement.OpacityMask).(Brush.RelativeTransform).(TranslateTransform.X)">
+                  <DoubleAnimation.EasingFunction>
+                    <SineEase EasingMode="EaseInOut"/>
+                  </DoubleAnimation.EasingFunction>
+                </DoubleAnimation>
+              </Storyboard>
+            </BeginStoryboard>
+          </DataTrigger.EnterActions>
+          <DataTrigger.ExitActions>
+            <StopStoryboard BeginStoryboardName="RunProgress"/>
+          </DataTrigger.ExitActions>
+        </DataTrigger>
+      </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+  </UserControl.Resources>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <StackPanel>
+      <TextBlock Style="{StaticResource PageTitle}" FontSize="32" Text="{Binding ModeTitle}"/>
+      <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
+        <TextBlock Text="{Binding ModeSubtitle}" Foreground="{DynamicResource SubtleBrush}"/>
+        <TextBlock Text="{loc:T Mode_Switching}" Foreground="{DynamicResource AccentTextBrush}" Margin="16,0,0,0"
+                   Visibility="{Binding IsBusy, Converter={StaticResource BoolToVisibility}}"/>
+      </StackPanel>
+    </StackPanel>
+
+    <ItemsControl Grid.Row="1" ItemsSource="{Binding ModeTiles}" Margin="0,22,-12,0" MaxWidth="1052"
+                  HorizontalAlignment="Stretch" Focusable="False">
+      <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+          <UniformGrid Rows="1"/>
+        </ItemsPanelTemplate>
+      </ItemsControl.ItemsPanel>
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <Button Template="{StaticResource ModeCardTemplate}" Height="210" Margin="0,0,12,0" Cursor="Hand"
+                  FocusVisualStyle="{x:Null}"
+                  AutomationProperties.Name="{Binding Title}" AutomationProperties.HelpText="{Binding Hint}"
+                  Command="{Binding DataContext.SwitchCommand, ElementName=Root}" CommandParameter="{Binding Mode}"/>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+
+    <TextBlock Grid.Row="2" Style="{StaticResource SectionTitle}" Text="{loc:T Mode_LastSwitch}" Margin="0,26,0,10"/>
+    <Border Grid.Row="3" Style="{StaticResource Card}" Padding="20,2" VerticalAlignment="Top">
+      <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,0,-14,0" Padding="0,0,14,0">
+        <ItemsControl ItemsSource="{Binding Report}" Style="{StaticResource ListWithEmpty}"
+                      Tag="{loc:T Mode_NoSwitches}" ItemTemplate="{StaticResource StepRowTemplate}"/>
+      </ScrollViewer>
+    </Border>
+  </Grid>
+</UserControl>

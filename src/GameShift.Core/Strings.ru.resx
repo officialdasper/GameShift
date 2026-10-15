@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>Питание</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>Не беспокоить</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>Программы</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>Память</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>Режим</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>Работа</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>Игровой</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>Уже включён</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>Не удалось записать снимок, ничего не менял: {0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>Выключено</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>Текущую схему не удалось прочитать, оставил как есть</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>Максимальная производительность</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>Текущее состояние не удалось прочитать, оставил как есть</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>Уведомления скрыты</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>Не настроено, включите заново в настройках</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>Кэш памяти очищен</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>Не удалось прочитать снимок: {0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>Уведомления включены</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>Оставлено как было</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>Не менялось</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>Схема питания возвращена</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>Не удалось удалить снимок: {0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>Не удалось закрыть: {0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>Нечего закрывать</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>Закрыто: {0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>; не тронуты (папка игры или Windows): {0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>; не тронуты (не удалось проверить путь): {0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>Нечего запускать</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>Не запустились: {0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>Всё уже запущено</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>Запущено: {0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>Эта игра уже в списке.</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>Эту программу закрывать нельзя: она в защищённом списке.</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>Программа уже в списке.</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>Управление питанием: максимальная производительность</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>Режим низкой задержки: вкл.</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>Фильтрация текстур: высокая производительность</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>Вертикальная синхронизация: выкл.</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>Кэш шейдеров: неограниченно</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>Применено</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>Драйвер не поддерживает: {0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>Нечего возвращать</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>Профиль не найден</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>Профиль удалён</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>Возвращено как было</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>Не вернулись настройки: {0} шт.</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>Не удалось прочитать схему питания</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>Такой схемы питания нет в системе</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg не запустился</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}: код {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>Не удалось запустить задачу очистки памяти</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>Режим</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>Программы</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>Игры</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>Сейчас включён</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>Включён</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>Переключаю…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>Последнее переключение</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>Переключений пока не было.</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>Обычные настройки Windows</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>Максимум для игр</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>Обычный режим</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>Включён вручную</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>Запущена игра: {0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>готово</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>ошибка</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>пропущено</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Убрать</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Отмена</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Добавить</value></data>
+  <data name="Common_System" xml:space="preserve"><value>Как в Windows</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>Игры</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>Когда запускается игра из списка, GameShift включает игровой режим. Выбирайте exe в папке игры, тогда на плитке будет её обложка из Steam или иконка.</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>Выбрать exe…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>Из запущенных</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>Список пуст. Добавьте exe игры, и режим будет включаться сам.</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>Выберите exe игры</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>Программы (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>Добавить игру</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>папка не указана</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>Программы</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>Что делать с ними в игровом режиме. Остальные программы не трогаются. Игры, античиты, Steam и системные процессы закрыть нельзя.</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>Добавить из запущенных</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>Список пуст. Добавьте программы, которые мешают играть.</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>Закрыть и вернуть</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>Закрыть насовсем</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>Не трогать</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>Добавить программы</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>Отметьте программы и нажмите «Добавить».</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Настройки</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>Игровые режимы</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>Включать схему питания «Максимальная производительность»</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>Скрывать уведомления Windows</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows не даёт управлять уведомлениями из программы.</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>Очищать кэш памяти перед игрой</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>Один раз попросит права администратора.</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>Переключать режим сам, когда запускается игра</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>Общее</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>Запускать вместе с Windows</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift запустится свёрнутым в трей.</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>Оформление</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Фон</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Тёмная</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Светлая</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>Прозрачность окна</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>Нужна Windows 11 версии 22H2 или новее.</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>Фон окна слегка окрашен цветом обоев</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>Сквозь окно размыто видно то, что под ним</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>Выкл.</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>Сплошной фон</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>Акцент</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>Зелёный</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>Красный</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>Оранжевый</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>Синий</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>Фиолетовый</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Язык</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>Настройки пишутся в профили драйвера только для игр со вкладки «Игры», на остальные программы они не влияют. Применяйте, когда игры закрыты.</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>Видеокарта NVIDIA или её драйвер не найдены.</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>Применить к играм</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>Вернуть как было</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Открыть</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Выход</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>Переключение ещё идёт, подождите.</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>Режим «{0}»</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>Запущена {0}, включаю игровые настройки.</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>Часть шагов не прошла. Подробности в окне.</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>Игра закрыта, настройки вернул.</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>Переключение не удалось: {0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>Игровой режим остался включён с прошлого раза. Вернуть обычные настройки?</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>Перед выходом вернуть режим «{0}»?</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>Без прав администратора очистка памяти работать не будет.</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>Ошибка: {0}
+Подробности в {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>Найти игры</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>Найденные игры</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>Ищу игры…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>Игры не найдены</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>Отметьте игры, которые нужно добавить. Если exe выбран не тот, замените его через «Выбрать exe…».</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>Добавить выбранные</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>Уже в списке</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>exe не найден</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>; оставлены открытыми: {0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>Ждёт вашего выбора</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>Ничего не открывал</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>Что закрыть перед игрой</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>Запущена {0}. Отмеченные программы закроются, потом включится игровой режим.</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>Отмеченные программы закроются, потом включится игровой режим.</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>Отметить все</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>Отмечено {0} из {1}</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>Запомнить выбор</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>Отмеченные будут закрываться перед каждой игрой, снятые останутся открытыми</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>Закрыть и включить режим</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>Включить без закрытия</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>Не трогаются: {0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>Закрываю программы…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>Не все программы закрылись</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>Возможно, там несохранённые изменения. Сохраните их в программе или выберите, что сделать.</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>Подождать ещё</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>Закрыть без сохранения</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>Закрыть все без сохранения</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>Оставить открытой</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>Оставить все открытыми</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>Закрывается…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>Закрыта</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>Ещё открыта</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>Закрываю без сохранения…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>Оставлена открытой</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>Не удалось закрыть</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>Что открыть обратно</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>Режим «{0}» уже включён. Эти программы GameShift закрыл перед игрой.</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>Отмеченные будут открываться после каждой игры, снятые нет</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>Открыть выбранные</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>Не открывать ничего</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>Эти программы уже закрыты.</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>Эти программы уже запущены снова.</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>Запущена {0}. Выберите, что закрыть перед игрой.</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>Свой цвет</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>Свой цвет акцента</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Применить</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>Насыщенность и яркость</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>Оттенок</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>Что делает режим</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>Ставит питание на максимальную производительность</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>Закрывает выбранные фоновые программы, сначала спросив</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>Скрывает уведомления Windows</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>Очищает standby-кэш памяти</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>Использует настройки NVIDIA в профилях ваших игр</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>Возвращает прежнюю схему питания</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>Снова показывает уведомления</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>Снова открывает закрытые программы, какие выберете</value></data>
+</root>

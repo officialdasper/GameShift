@@ -1,0 +1,8 @@
+{
+	"LaunchExecutable": "",
+	"DisplayName": "Unreal Engine",
+	"AppName": "UE_5.3",
+	"MainGameAppName": "UE_5.3",
+	"AppCategories": ["public", "engines"],
+	"InstallLocation": "C:\\Program Files\\Epic Games\\UE_5.3"
+}

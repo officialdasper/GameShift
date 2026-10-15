@@ -1,0 +1,7 @@
+product_id: "valorant"
+patching_state: "up_to_date"
+product_install_full_path: "C:/Riot Games/VALORANT/live"
+settings:
+  locale_data:
+    available_locales:
+    - "en_US"

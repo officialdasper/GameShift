@@ -1,0 +1,78 @@
+<UserControl x:Class="GameShift.App.Views.GamesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:loc="clr-namespace:GameShift.App.Localization"
+             xmlns:theme="clr-namespace:GameShift.App.Theme"
+             x:Name="Root">
+  <UserControl.Resources>
+    <DataTemplate x:Key="GameTile">
+      <Border x:Name="Tile" Width="148" Height="156" Margin="0,0,12,12" Background="{DynamicResource SurfaceBrush}"
+              BorderBrush="{DynamicResource LineBrush}" BorderThickness="1" CornerRadius="8" SnapsToDevicePixels="True"
+              ToolTip="{Binding FolderText}">
+        <Grid>
+          <Border x:Name="ArtBox" Height="70" VerticalAlignment="Top" CornerRadius="7,7,0,0" Visibility="Collapsed">
+            <Border.Background>
+              <ImageBrush ImageSource="{Binding Art}" Stretch="UniformToFill" RenderOptions.BitmapScalingMode="HighQuality"/>
+            </Border.Background>
+          </Border>
+          <Border x:Name="RemoveBack" Width="28" Height="28" CornerRadius="6" Background="#99000000"
+                  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,6,6,0" Visibility="Collapsed"/>
+          <Grid x:Name="IconBox" Width="44" Height="44" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0">
+            <TextBlock x:Name="Fallback" Style="{StaticResource Glyph}" Text="&#xE7FC;" FontSize="34" Visibility="Collapsed"
+                       HorizontalAlignment="Center" Foreground="{DynamicResource MutedBrush}"/>
+            <Image Source="{Binding Icon}" Width="32" Height="32" RenderOptions.BitmapScalingMode="HighQuality"/>
+          </Grid>
+          <TextBlock Text="{Binding ExeName}" FontSize="12.5" TextAlignment="Center" VerticalAlignment="Bottom"
+                     Margin="12,0,12,16" MaxHeight="36" TextTrimming="CharacterEllipsis"/>
+          <Button x:Name="Remove" Style="{StaticResource RemoveButton}" Content="&#xE711;" Width="28" Height="28" FontSize="11"
+                  HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,6,6,0"
+                  ToolTip="{loc:T Common_Remove}" AutomationProperties.Name="{loc:T Common_Remove}"
+                  Command="{Binding DataContext.RemoveGameCommand, ElementName=Root}" CommandParameter="{Binding}"/>
+        </Grid>
+      </Border>
+      <DataTemplate.Triggers>
+        <DataTrigger Binding="{Binding Icon}" Value="{x:Null}">
+          <Setter TargetName="Fallback" Property="Visibility" Value="Visible"/>
+        </DataTrigger>
+        <DataTrigger Binding="{Binding Art, Converter={StaticResource IsNotNull}}" Value="True">
+          <Setter TargetName="ArtBox" Property="Visibility" Value="Visible"/>
+          <Setter TargetName="IconBox" Property="Visibility" Value="Collapsed"/>
+          <Setter TargetName="RemoveBack" Property="Visibility" Value="Visible"/>
+          <Setter TargetName="Remove" Property="Foreground" Value="#FFFFFF"/>
+        </DataTrigger>
+        <Trigger SourceName="Tile" Property="IsMouseOver" Value="True">
+          <Setter TargetName="Tile" Property="BorderBrush" Value="{DynamicResource MutedBrush}"/>
+        </Trigger>
+      </DataTemplate.Triggers>
+    </DataTemplate>
+
+    <ItemsPanelTemplate x:Key="TilePanel">
+      <WrapPanel/>
+    </ItemsPanelTemplate>
+  </UserControl.Resources>
+
+  <ScrollViewer VerticalScrollBarVisibility="Auto" theme:ScrollShade.Brush="{DynamicResource PageShadeBrush}">
+    <StackPanel Margin="36,26,28,16">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+          <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+          <TextBlock Style="{StaticResource PageTitle}" Text="{loc:T Games_Title}"/>
+          <TextBlock Style="{StaticResource PageSubtitle}"
+                     Text="{loc:T Games_Subtitle}"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Margin="16,6,0,0" VerticalAlignment="Top">
+          <Button Style="{StaticResource AccentButton}" Content="{loc:T Games_Find}" Command="{Binding FindGamesCommand}"/>
+          <Button Style="{StaticResource ActionButton}" Content="{loc:T Games_PickExe}" Command="{Binding AddGameFileCommand}"/>
+          <Button Style="{StaticResource ActionButton}" Content="{loc:T Games_FromRunning}" Margin="0" Command="{Binding AddRunningGameCommand}"/>
+        </StackPanel>
+      </Grid>
+
+      <ItemsControl ItemsSource="{Binding Games}" ItemTemplate="{StaticResource GameTile}" Margin="0,24,0,0"
+                    ItemsPanel="{StaticResource TilePanel}" Style="{StaticResource ListWithEmpty}"
+                    Tag="{loc:T Games_Empty}" Focusable="False"/>
+    </StackPanel>
+  </ScrollViewer>
+</UserControl>

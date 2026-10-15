@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Test
+        run: dotnet test GameShift.sln -c Release
+
+      - name: Publish
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart('v')
+          dotnet publish src/GameShift.App -c Release -r win-x64 --self-contained true `
+            -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true `
+            -p:EnableCompressionInSingleFile=true -p:Version=$version -o publish
+
+      - name: Package and checksums
+        shell: pwsh
+        run: |
+          Compress-Archive -Path publish/GameShift.exe -DestinationPath publish/GameShift-win-x64.zip
+          $lines = foreach ($f in 'GameShift.exe', 'GameShift-win-x64.zip') {
+            $hash = (Get-FileHash "publish/$f" -Algorithm SHA256).Hash.ToLower()
+            "$hash  $f"
+          }
+          $lines | Set-Content -Encoding ascii publish/SHA256SUMS.txt
+
+      - name: Release notes from CHANGELOG
+        shell: pwsh
+        run: |
+          $version = "${{ github.ref_name }}".TrimStart('v')
+          $text = Get-Content CHANGELOG.md -Raw
+          $pattern = "(?ms)^## \[$([regex]::Escape($version))\][^\r\n]*\r?\n(.*?)(?=^## \[|\z)"
+          $m = [regex]::Match($text, $pattern)
+          $body = if ($m.Success) { $m.Groups[1].Value.Trim() } else { "Release $version" }
+          $sums = Get-Content publish/SHA256SUMS.txt -Raw
+          $notes = "$body`n`n### SHA256`n`n``````text`n$sums``````"
+          Set-Content -Path release-notes.md -Value $notes -Encoding utf8
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          body_path: release-notes.md
+          files: |
+            publish/GameShift.exe
+            publish/GameShift-win-x64.zip
+            publish/SHA256SUMS.txt

@@ -1,0 +1,8 @@
+{
+	"LaunchExecutable": "",
+	"DisplayName": "Some DLC",
+	"AppName": "SugarDlc",
+	"MainGameAppName": "Sugar",
+	"AppCategories": ["public", "addons"],
+	"InstallLocation": "D:\\Epic Games\\rocketleague"
+}

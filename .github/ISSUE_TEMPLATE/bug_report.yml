@@ -1,0 +1,34 @@
+name: Bug report / Ошибка
+description: Something does not work as expected / Что-то работает не так
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / Что произошло
+      description: Steps to reproduce and what you expected / Шаги и ожидаемый результат
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: GameShift version / Версия
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version / Версия Windows
+      placeholder: "Windows 11 23H2"
+  - type: input
+    id: gpu
+    attributes:
+      label: Graphics card / Видеокарта
+      placeholder: "NVIDIA GeForce RTX 4070"
+  - type: textarea
+    id: log
+    attributes:
+      label: error.log
+      description: Contents of %APPDATA%\GameShift\error.log, if it exists / Содержимое файла, если он есть
+      render: text

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Step_Power" xml:space="preserve"><value>Power</value></data>
+  <data name="Step_Focus" xml:space="preserve"><value>Do not disturb</value></data>
+  <data name="Step_Apps" xml:space="preserve"><value>Programs</value></data>
+  <data name="Step_Memory" xml:space="preserve"><value>Memory</value></data>
+  <data name="Step_Mode" xml:space="preserve"><value>Mode</value></data>
+  <data name="Mode_Work" xml:space="preserve"><value>Work</value></data>
+  <data name="Mode_Gaming" xml:space="preserve"><value>Gaming</value></data>
+  <data name="Ctl_AlreadyOn" xml:space="preserve"><value>Already on</value></data>
+  <data name="Ctl_SnapshotWriteFailed" xml:space="preserve"><value>Could not save the snapshot, nothing was changed: {0}</value></data>
+  <data name="Ctl_Off" xml:space="preserve"><value>Off</value></data>
+  <data name="Ctl_PowerUnreadable" xml:space="preserve"><value>Could not read the current plan, left as is</value></data>
+  <data name="Ctl_MaxPerformance" xml:space="preserve"><value>Maximum performance</value></data>
+  <data name="Ctl_FocusUnreadable" xml:space="preserve"><value>Could not read the current state, left as is</value></data>
+  <data name="Ctl_NotificationsHidden" xml:space="preserve"><value>Notifications hidden</value></data>
+  <data name="Ctl_MemoryNotConfigured" xml:space="preserve"><value>Not set up, turn it on again in settings</value></data>
+  <data name="Ctl_MemoryPurged" xml:space="preserve"><value>Memory cache cleared</value></data>
+  <data name="Ctl_SnapshotReadFailed" xml:space="preserve"><value>Could not read the snapshot: {0}</value></data>
+  <data name="Ctl_NotificationsOn" xml:space="preserve"><value>Notifications on</value></data>
+  <data name="Ctl_LeftAsWas" xml:space="preserve"><value>Left as it was</value></data>
+  <data name="Ctl_NotChanged" xml:space="preserve"><value>Not changed</value></data>
+  <data name="Ctl_PowerRestored" xml:space="preserve"><value>Power plan restored</value></data>
+  <data name="Ctl_SnapshotDeleteFailed" xml:space="preserve"><value>Could not delete the snapshot: {0}</value></data>
+  <data name="Ctl_CloseFailed" xml:space="preserve"><value>Could not close: {0}</value></data>
+  <data name="Ctl_NothingToClose" xml:space="preserve"><value>Nothing to close</value></data>
+  <data name="Ctl_Closed" xml:space="preserve"><value>Closed: {0}</value></data>
+  <data name="Ctl_ProtectedApps" xml:space="preserve"><value>; left alone (game or Windows folder): {0}</value></data>
+  <data name="Ctl_UnverifiedApps" xml:space="preserve"><value>; left alone (path could not be checked): {0}</value></data>
+  <data name="Ctl_NothingToStart" xml:space="preserve"><value>Nothing to start</value></data>
+  <data name="Ctl_StartFailed" xml:space="preserve"><value>Failed to start: {0}</value></data>
+  <data name="Ctl_AllRunning" xml:space="preserve"><value>Everything is already running</value></data>
+  <data name="Ctl_Started" xml:space="preserve"><value>Started: {0}</value></data>
+  <data name="Val_GameExists" xml:space="preserve"><value>This game is already in the list.</value></data>
+  <data name="Val_AppProtected" xml:space="preserve"><value>This program cannot be closed: it is on the protected list.</value></data>
+  <data name="Val_AppExists" xml:space="preserve"><value>The program is already in the list.</value></data>
+  <data name="Nvidia_PowerMgmt" xml:space="preserve"><value>Power management: prefer maximum performance</value></data>
+  <data name="Nvidia_LowLatency" xml:space="preserve"><value>Low latency mode: on</value></data>
+  <data name="Nvidia_TextureFiltering" xml:space="preserve"><value>Texture filtering: high performance</value></data>
+  <data name="Nvidia_Vsync" xml:space="preserve"><value>Vertical sync: off</value></data>
+  <data name="Nvidia_ShaderCache" xml:space="preserve"><value>Shader cache: unlimited</value></data>
+  <data name="Nvidia_Applied" xml:space="preserve"><value>Applied</value></data>
+  <data name="Nvidia_Unsupported" xml:space="preserve"><value>Not supported by the driver: {0}</value></data>
+  <data name="Nvidia_NothingToRestore" xml:space="preserve"><value>Nothing to restore</value></data>
+  <data name="Nvidia_ProfileNotFound" xml:space="preserve"><value>Profile not found</value></data>
+  <data name="Nvidia_ProfileDeleted" xml:space="preserve"><value>Profile deleted</value></data>
+  <data name="Nvidia_Restored" xml:space="preserve"><value>Restored to the original</value></data>
+  <data name="Nvidia_RestoreFailed" xml:space="preserve"><value>Settings not restored: {0}</value></data>
+  <data name="Power_ReadFailed" xml:space="preserve"><value>Could not read the power plan</value></data>
+  <data name="Power_SchemeMissing" xml:space="preserve"><value>This power plan does not exist on the system</value></data>
+  <data name="Power_NotStarted" xml:space="preserve"><value>powercfg did not start</value></data>
+  <data name="Power_ExitCode" xml:space="preserve"><value>powercfg {0}: exit code {1}</value></data>
+  <data name="Purge_TaskFailed" xml:space="preserve"><value>Could not run the memory cleanup task</value></data>
+  <data name="Nav_Mode" xml:space="preserve"><value>Mode</value></data>
+  <data name="Nav_Apps" xml:space="preserve"><value>Programs</value></data>
+  <data name="Nav_Games" xml:space="preserve"><value>Games</value></data>
+  <data name="Nav_Settings" xml:space="preserve"><value>Settings</value></data>
+  <data name="Nav_CurrentMode" xml:space="preserve"><value>Currently on</value></data>
+  <data name="Mode_On" xml:space="preserve"><value>On</value></data>
+  <data name="Mode_Switching" xml:space="preserve"><value>Switching…</value></data>
+  <data name="Mode_LastSwitch" xml:space="preserve"><value>Last switch</value></data>
+  <data name="Mode_NoSwitches" xml:space="preserve"><value>No switches yet.</value></data>
+  <data name="Mode_WorkHint" xml:space="preserve"><value>Regular Windows settings</value></data>
+  <data name="Mode_GamingHint" xml:space="preserve"><value>Full power for games</value></data>
+  <data name="Mode_SubtitleWork" xml:space="preserve"><value>Normal mode</value></data>
+  <data name="Mode_SubtitleManual" xml:space="preserve"><value>Turned on manually</value></data>
+  <data name="Mode_SubtitleGame" xml:space="preserve"><value>Game running: {0}</value></data>
+  <data name="Status_Done" xml:space="preserve"><value>done</value></data>
+  <data name="Status_Failed" xml:space="preserve"><value>error</value></data>
+  <data name="Status_Skipped" xml:space="preserve"><value>skipped</value></data>
+  <data name="Common_Remove" xml:space="preserve"><value>Remove</value></data>
+  <data name="Common_Cancel" xml:space="preserve"><value>Cancel</value></data>
+  <data name="Common_Add" xml:space="preserve"><value>Add</value></data>
+  <data name="Common_System" xml:space="preserve"><value>Same as Windows</value></data>
+  <data name="Games_Title" xml:space="preserve"><value>Games</value></data>
+  <data name="Games_Subtitle" xml:space="preserve"><value>When a game from the list starts, GameShift turns on Gaming mode. Pick the exe in the game folder to get its Steam cover or icon on the tile.</value></data>
+  <data name="Games_PickExe" xml:space="preserve"><value>Choose exe…</value></data>
+  <data name="Games_FromRunning" xml:space="preserve"><value>From running</value></data>
+  <data name="Games_Empty" xml:space="preserve"><value>The list is empty. Add a game exe and the mode will switch on its own.</value></data>
+  <data name="Games_PickExeTitle" xml:space="preserve"><value>Choose the game exe</value></data>
+  <data name="Games_FilterExe" xml:space="preserve"><value>Programs (*.exe)|*.exe</value></data>
+  <data name="Games_AddTitle" xml:space="preserve"><value>Add a game</value></data>
+  <data name="Games_FolderNotSet" xml:space="preserve"><value>folder not set</value></data>
+  <data name="Apps_Title" xml:space="preserve"><value>Programs</value></data>
+  <data name="Apps_Subtitle" xml:space="preserve"><value>What to do with them in Gaming mode. Other programs are left alone. Games, anti-cheats, Steam and system processes cannot be closed.</value></data>
+  <data name="Apps_AddRunning" xml:space="preserve"><value>Add from running</value></data>
+  <data name="Apps_Empty" xml:space="preserve"><value>The list is empty. Add programs that get in the way of gaming.</value></data>
+  <data name="Apps_RuleCloseRestore" xml:space="preserve"><value>Close and restore</value></data>
+  <data name="Apps_RuleCloseOnly" xml:space="preserve"><value>Close for good</value></data>
+  <data name="Apps_RuleKeep" xml:space="preserve"><value>Leave alone</value></data>
+  <data name="Apps_AddTitle" xml:space="preserve"><value>Add programs</value></data>
+  <data name="Pick_Hint" xml:space="preserve"><value>Select the programs and click “Add”.</value></data>
+  <data name="Settings_Title" xml:space="preserve"><value>Settings</value></data>
+  <data name="Settings_GameModes" xml:space="preserve"><value>Gaming mode</value></data>
+  <data name="Settings_Power" xml:space="preserve"><value>Switch to the “Maximum performance” power plan</value></data>
+  <data name="Settings_Focus" xml:space="preserve"><value>Hide Windows notifications</value></data>
+  <data name="Settings_FocusUnsupported" xml:space="preserve"><value>Windows does not let programs control notifications.</value></data>
+  <data name="Settings_Memory" xml:space="preserve"><value>Clear the memory cache before a game</value></data>
+  <data name="Settings_MemoryHint" xml:space="preserve"><value>Asks for administrator rights once.</value></data>
+  <data name="Settings_AutoSwitch" xml:space="preserve"><value>Switch the mode automatically when a game starts</value></data>
+  <data name="Settings_General" xml:space="preserve"><value>General</value></data>
+  <data name="Settings_Autostart" xml:space="preserve"><value>Start with Windows</value></data>
+  <data name="Settings_AutostartHint" xml:space="preserve"><value>GameShift will start minimized to the tray.</value></data>
+  <data name="Settings_Appearance" xml:space="preserve"><value>Appearance</value></data>
+  <data name="Settings_Theme" xml:space="preserve"><value>Background</value></data>
+  <data name="Theme_Dark" xml:space="preserve"><value>Dark</value></data>
+  <data name="Theme_Light" xml:space="preserve"><value>Light</value></data>
+  <data name="Settings_Backdrop" xml:space="preserve"><value>Window transparency</value></data>
+  <data name="Settings_BackdropHint" xml:space="preserve"><value>Requires Windows 11 version 22H2 or newer.</value></data>
+  <data name="Backdrop_MicaTip" xml:space="preserve"><value>The window background is lightly tinted by your wallpaper</value></data>
+  <data name="Backdrop_AcrylicTip" xml:space="preserve"><value>What is behind the window shows through, blurred</value></data>
+  <data name="Backdrop_None" xml:space="preserve"><value>Off</value></data>
+  <data name="Backdrop_NoneTip" xml:space="preserve"><value>Solid background</value></data>
+  <data name="Settings_Accent" xml:space="preserve"><value>Accent</value></data>
+  <data name="Accent_Green" xml:space="preserve"><value>Green</value></data>
+  <data name="Accent_Red" xml:space="preserve"><value>Red</value></data>
+  <data name="Accent_Orange" xml:space="preserve"><value>Orange</value></data>
+  <data name="Accent_Blue" xml:space="preserve"><value>Blue</value></data>
+  <data name="Accent_Purple" xml:space="preserve"><value>Purple</value></data>
+  <data name="Settings_Language" xml:space="preserve"><value>Language</value></data>
+  <data name="Settings_NvidiaDescription" xml:space="preserve"><value>Settings are written to driver profiles only for the games on the “Games” tab and do not affect other programs. Apply them while the games are closed.</value></data>
+  <data name="Settings_NvidiaMissing" xml:space="preserve"><value>NVIDIA graphics card or its driver not found.</value></data>
+  <data name="Settings_NvidiaApply" xml:space="preserve"><value>Apply to games</value></data>
+  <data name="Settings_NvidiaRestore" xml:space="preserve"><value>Restore original</value></data>
+  <data name="Tray_Open" xml:space="preserve"><value>Open</value></data>
+  <data name="Tray_Exit" xml:space="preserve"><value>Exit</value></data>
+  <data name="Tray_SwitchBusy" xml:space="preserve"><value>A switch is still in progress, please wait.</value></data>
+  <data name="Tray_ModeTitle" xml:space="preserve"><value>Mode: {0}</value></data>
+  <data name="Tray_GameStarted" xml:space="preserve"><value>{0} started, turning on game settings.</value></data>
+  <data name="Tray_StepsFailed" xml:space="preserve"><value>Some steps failed. Details are in the window.</value></data>
+  <data name="Tray_GameClosed" xml:space="preserve"><value>Game closed, settings restored.</value></data>
+  <data name="Err_SwitchFailed" xml:space="preserve"><value>Switch failed: {0}</value></data>
+  <data name="Dlg_Recover" xml:space="preserve"><value>Gaming mode was left on from last time. Restore the normal settings?</value></data>
+  <data name="Dlg_ExitRestore" xml:space="preserve"><value>Return to “{0}” mode before exiting?</value></data>
+  <data name="Dlg_MemoryNeedsAdmin" xml:space="preserve"><value>Memory cleanup will not work without administrator rights.</value></data>
+  <data name="Err_Generic" xml:space="preserve"><value>Error: {0}
+Details in {1}</value></data>
+  <data name="Games_Find" xml:space="preserve"><value>Find games</value></data>
+  <data name="Scan_Title" xml:space="preserve"><value>Games found</value></data>
+  <data name="Scan_Searching" xml:space="preserve"><value>Looking for games…</value></data>
+  <data name="Scan_Empty" xml:space="preserve"><value>No games found</value></data>
+  <data name="Scan_Hint" xml:space="preserve"><value>Tick the games to add. If the exe is wrong, change it with “Choose exe…”.</value></data>
+  <data name="Scan_AddSelected" xml:space="preserve"><value>Add selected</value></data>
+  <data name="Scan_Listed" xml:space="preserve"><value>Already in the list</value></data>
+  <data name="Scan_NoExe" xml:space="preserve"><value>exe not found</value></data>
+  <data name="Ctl_LeftOpen" xml:space="preserve"><value>; left open: {0}</value></data>
+  <data name="Ctl_WaitingChoice" xml:space="preserve"><value>Waiting for your choice</value></data>
+  <data name="Ctl_NoneReopened" xml:space="preserve"><value>Nothing reopened</value></data>
+  <data name="Close_Title" xml:space="preserve"><value>What to close before playing</value></data>
+  <data name="Close_SubtitleGame" xml:space="preserve"><value>{0} is running. Checked programs will close, then gaming mode turns on.</value></data>
+  <data name="Close_Subtitle" xml:space="preserve"><value>Checked programs will close, then gaming mode turns on.</value></data>
+  <data name="Close_SelectAll" xml:space="preserve"><value>Select all</value></data>
+  <data name="Close_Count" xml:space="preserve"><value>{0} of {1} selected</value></data>
+  <data name="Close_Remember" xml:space="preserve"><value>Remember my choice</value></data>
+  <data name="Close_RememberHint" xml:space="preserve"><value>Checked programs will close before every game, unchecked ones stay open</value></data>
+  <data name="Close_Confirm" xml:space="preserve"><value>Close and switch</value></data>
+  <data name="Close_ConfirmNone" xml:space="preserve"><value>Switch without closing</value></data>
+  <data name="Close_Kept" xml:space="preserve"><value>Not touched: {0}</value></data>
+  <data name="Close_Closing" xml:space="preserve"><value>Closing programs…</value></data>
+  <data name="Close_WaitTitle" xml:space="preserve"><value>Some programs are still open</value></data>
+  <data name="Close_WaitHint" xml:space="preserve"><value>They may have unsaved changes. Save them in the program, or choose what to do.</value></data>
+  <data name="Close_WaitMore" xml:space="preserve"><value>Wait longer</value></data>
+  <data name="Close_Kill" xml:space="preserve"><value>Close without saving</value></data>
+  <data name="Close_KillAll" xml:space="preserve"><value>Close all without saving</value></data>
+  <data name="Close_Leave" xml:space="preserve"><value>Leave open</value></data>
+  <data name="Close_LeaveAll" xml:space="preserve"><value>Leave all open</value></data>
+  <data name="Close_StateClosing" xml:space="preserve"><value>Closing…</value></data>
+  <data name="Close_StateClosed" xml:space="preserve"><value>Closed</value></data>
+  <data name="Close_StateWaiting" xml:space="preserve"><value>Still open</value></data>
+  <data name="Close_StateKilling" xml:space="preserve"><value>Closing without saving…</value></data>
+  <data name="Close_StateLeft" xml:space="preserve"><value>Left open</value></data>
+  <data name="Close_StateFailed" xml:space="preserve"><value>Couldn't close</value></data>
+  <data name="Restore_Title" xml:space="preserve"><value>What to reopen</value></data>
+  <data name="Restore_Subtitle" xml:space="preserve"><value>{0} mode is already back on. GameShift closed these programs before the game.</value></data>
+  <data name="Restore_RememberHint" xml:space="preserve"><value>Checked programs will reopen after every game, unchecked ones won't</value></data>
+  <data name="Restore_Confirm" xml:space="preserve"><value>Open selected</value></data>
+  <data name="Restore_Skip" xml:space="preserve"><value>Don't open anything</value></data>
+  <data name="Close_Empty" xml:space="preserve"><value>These programs are already closed.</value></data>
+  <data name="Restore_Empty" xml:space="preserve"><value>These programs are already running again.</value></data>
+  <data name="Tray_ChooseApps" xml:space="preserve"><value>{0} is running. Choose what to close before playing.</value></data>
+  <data name="Accent_Custom" xml:space="preserve"><value>Custom color</value></data>
+  <data name="Accent_PickerTitle" xml:space="preserve"><value>Custom accent color</value></data>
+  <data name="Common_Apply" xml:space="preserve"><value>Apply</value></data>
+  <data name="Accent_PickerArea" xml:space="preserve"><value>Saturation and brightness</value></data>
+  <data name="Accent_PickerHue" xml:space="preserve"><value>Hue</value></data>
+  <data name="Mode_InfoName" xml:space="preserve"><value>What this mode does</value></data>
+  <data name="Summary_GamingPower" xml:space="preserve"><value>Switches the power plan to maximum performance</value></data>
+  <data name="Summary_GamingApps" xml:space="preserve"><value>Closes the background programs you choose, asking first</value></data>
+  <data name="Summary_GamingNotifications" xml:space="preserve"><value>Hides Windows notifications</value></data>
+  <data name="Summary_GamingMemory" xml:space="preserve"><value>Clears the standby memory cache</value></data>
+  <data name="Summary_GamingNvidia" xml:space="preserve"><value>Uses NVIDIA profile settings for your games</value></data>
+  <data name="Summary_WorkPower" xml:space="preserve"><value>Brings back your usual power plan</value></data>
+  <data name="Summary_WorkNotifications" xml:space="preserve"><value>Turns notifications back on</value></data>
+  <data name="Summary_WorkApps" xml:space="preserve"><value>Reopens the closed programs you choose</value></data>
+</root>

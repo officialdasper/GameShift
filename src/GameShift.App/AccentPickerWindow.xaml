@@ -1,0 +1,97 @@
+<Window x:Class="GameShift.App.AccentPickerWindow" Style="{StaticResource AppWindow}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:loc="clr-namespace:GameShift.App.Localization"
+        Title="{loc:T Accent_PickerTitle}" SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner" ShowInTaskbar="False">
+  <Window.Resources>
+    <!-- Кольцо-бегунок: белое с тонкой тёмной кромкой, чтобы читалось и на белом, и на чёрном углу палитры. -->
+    <Style x:Key="Knob" TargetType="Grid">
+      <Setter Property="Width" Value="18"/>
+      <Setter Property="Height" Value="18"/>
+      <Setter Property="IsHitTestVisible" Value="False"/>
+      <Setter Property="RenderTransformOrigin" Value="0.5,0.5"/>
+    </Style>
+  </Window.Resources>
+
+  <StackPanel x:Name="Root" Margin="20,18,20,20">
+    <Grid Width="288" Height="176">
+      <Border x:Name="Area" Focusable="True" FocusVisualStyle="{x:Null}" Background="Transparent" Cursor="Hand"
+              AutomationProperties.Name="{loc:T Accent_PickerArea}">
+        <Grid>
+          <Grid.Clip>
+            <RectangleGeometry Rect="0,0,288,176" RadiusX="6" RadiusY="6"/>
+          </Grid.Clip>
+          <Rectangle x:Name="HueLayer"/>
+          <Rectangle>
+            <Rectangle.Fill>
+              <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                <GradientStop Color="#FFFFFFFF" Offset="0"/>
+                <GradientStop Color="#00FFFFFF" Offset="1"/>
+              </LinearGradientBrush>
+            </Rectangle.Fill>
+          </Rectangle>
+          <Rectangle>
+            <Rectangle.Fill>
+              <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#00000000" Offset="0"/>
+                <GradientStop Color="#FF000000" Offset="1"/>
+              </LinearGradientBrush>
+            </Rectangle.Fill>
+          </Rectangle>
+        </Grid>
+      </Border>
+      <Border CornerRadius="6" BorderThickness="1" BorderBrush="{DynamicResource LineBrush}" IsHitTestVisible="False"/>
+      <Border x:Name="AreaRing" Margin="-3" CornerRadius="9" BorderThickness="2" BorderBrush="{DynamicResource AccentBrush}"
+              Visibility="Collapsed" IsHitTestVisible="False"/>
+      <Canvas IsHitTestVisible="False">
+        <Grid x:Name="AreaKnob" Style="{StaticResource Knob}">
+          <Ellipse Stroke="#59000000" StrokeThickness="1"/>
+          <Ellipse x:Name="AreaKnobFill" Margin="1" Stroke="#FFFFFFFF" StrokeThickness="2.5"/>
+        </Grid>
+      </Canvas>
+    </Grid>
+
+    <Grid Width="288" Height="18" Margin="0,16,0,0">
+      <Border x:Name="Hue" Focusable="True" FocusVisualStyle="{x:Null}" Background="Transparent" Cursor="Hand"
+              AutomationProperties.Name="{loc:T Accent_PickerHue}">
+        <Border Height="12" CornerRadius="6" VerticalAlignment="Center">
+          <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+              <GradientStop Color="#FF0000" Offset="0"/>
+              <GradientStop Color="#FFFF00" Offset="0.16667"/>
+              <GradientStop Color="#00FF00" Offset="0.33333"/>
+              <GradientStop Color="#00FFFF" Offset="0.5"/>
+              <GradientStop Color="#0000FF" Offset="0.66667"/>
+              <GradientStop Color="#FF00FF" Offset="0.83333"/>
+              <GradientStop Color="#FF0000" Offset="1"/>
+            </LinearGradientBrush>
+          </Border.Background>
+        </Border>
+      </Border>
+      <Border x:Name="HueRing" Margin="-3,0" CornerRadius="9" BorderThickness="2" BorderBrush="{DynamicResource AccentBrush}"
+              Visibility="Collapsed" IsHitTestVisible="False"/>
+      <Canvas IsHitTestVisible="False">
+        <Grid x:Name="HueKnob" Style="{StaticResource Knob}">
+          <Ellipse Stroke="#59000000" StrokeThickness="1"/>
+          <Ellipse x:Name="HueKnobFill" Margin="1" Stroke="#FFFFFFFF" StrokeThickness="2.5"/>
+        </Grid>
+      </Canvas>
+    </Grid>
+
+    <Grid Margin="0,22,0,0">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+      </Grid.ColumnDefinitions>
+      <Border x:Name="Preview" Width="64" Height="32" CornerRadius="6" BorderThickness="1"
+              BorderBrush="{DynamicResource LineBrush}" VerticalAlignment="Center" Margin="0,0,16,0"/>
+      <StackPanel Grid.Column="2" Orientation="Horizontal">
+        <Button Style="{StaticResource ActionButton}" Content="{loc:T Common_Cancel}" IsCancel="True"/>
+        <Button Style="{StaticResource AccentButton}" Content="{loc:T Common_Apply}" IsDefault="True" Margin="0"
+                Click="OnApply"/>
+      </StackPanel>
+    </Grid>
+  </StackPanel>
+</Window>
